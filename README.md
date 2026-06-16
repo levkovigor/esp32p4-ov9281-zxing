@@ -66,7 +66,6 @@ idf.py build flash monitor
 ---
 
 ## Technical Details
-- **Firmware Version**: 19.0 (Limit Speed).
 - **Data Output**: Barcode coordinates and decoded data are printed to the console in the following format:
   `deltaX:deltaY:angle:distX:distY:data`
 - **Display**: Uses LVGL Canvas for real-time 640x400 video streaming.
