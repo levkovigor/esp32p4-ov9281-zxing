@@ -1,0 +1,110 @@
+ESP-ROM:esp32p4-eco1-20240205
+Build:Feb  5 2024
+rst:0x1 (POWERON),boot:0x30f (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x15e0
+load:0x4ff29ed0,len:0xe44
+load:0x4ff2cbd0,len:0x359c
+entry 0x4ff29eda
+I (25) boot: ESP-IDF v6.0.1 2nd stage bootloader
+I (26) boot: compile time May 13 2026 13:38:39
+I (26) boot: Multicore bootloader
+I (27) boot: chip revision: v0.1
+I (29) boot: efuse block revision: v0.0
+I (32) boot.esp32p4: SPI Speed      : 80MHz
+I (36) boot.esp32p4: SPI Mode       : DIO
+I (40) boot.esp32p4: SPI Flash Size : 16MB
+I (44) boot: Enabling RNG early entropy source...
+I (48) boot: Partition Table:
+I (51) boot: ## Label            Usage          Type ST Offset   Length
+I (57) boot:  0 nvs              WiFi data        01 02 00009000 00004000
+I (63) boot:  1 otadata          OTA data         01 00 0000d000 00002000
+I (70) boot:  2 phy_init         RF data          01 01 0000f000 00001000
+I (77) boot:  3 factory          factory app      00 00 00010000 00400000
+I (83) boot:  4 ota_0            OTA app          00 10 00410000 00400000
+I (90) boot:  5 ota_1            OTA app          00 11 00810000 00400000
+I (96) boot:  6 storage          Unknown data     01 82 00c10000 00300000
+I (104) boot: End of partition table
+I (107) boot: Defaulting to factory image
+I (110) esp_image: segment 0: paddr=00010020 vaddr=40130020 size=613d4h (398292) map
+I (187) esp_image: segment 1: paddr=000713fc vaddr=30100000 size=00068h (   104) load
+I (188) esp_image: segment 2: paddr=0007146c vaddr=4ff00000 size=0ebach ( 60332) load
+I (203) esp_image: segment 3: paddr=00080020 vaddr=40000020 size=12b6dch (1226460) map
+I (415) esp_image: segment 4: paddr=001ab704 vaddr=4ff0ebac size=02264h (  8804) load
+I (418) esp_image: segment 5: paddr=001ad970 vaddr=4ff10e80 size=031e0h ( 12768) load
+I (423) esp_image: segment 6: paddr=001b0b58 vaddr=50108080 size=00024h (    36) load
+I (431) boot: Loaded app from partition at offset 0x10000
+I (432) boot: Disabling RNG early entropy source...
+W (448) pmu_pvt: blk_version is less than 2, pvt auto dbias init not supported in efuse.
+I (450) hex_psram: vendor id    : 0x0d (AP)
+I (450) hex_psram: Latency      : 0x01 (Fixed)
+I (452) hex_psram: DriveStr.    : 0x00 (25 Ohm)
+I (457) hex_psram: dev id       : 0x03 (generation 4)
+I (461) hex_psram: density      : 0x07 (256 Mbit)
+I (466) hex_psram: good-die     : 0x06 (Pass)
+I (470) hex_psram: SRF          : 0x02 (Slow Refresh)
+I (475) hex_psram: BurstType    : 0x00 ( Wrap)
+I (479) hex_psram: BurstLen     : 0x03 (2048 Byte)
+I (483) hex_psram: BitMode      : 0x01 (X16 Mode)
+I (488) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)
+I (493) hex_psram: DriveStrength: 0x00 (1/1)
+I (497) MSPI Timing: Enter psram timing tuning
+I (675) esp_psram: Found 32MB PSRAM device
+I (675) esp_psram: Speed: 200MHz
+I (676) hex_psram: psram CS IO is dedicated
+I (677) cpu_start: Multicore app
+I (1584) esp_psram: SPI SRAM memory test OK
+I (1594) cpu_start: GPIO 38 and 37 are used as console UART I/O pins
+I (1594) cpu_start: Pro cpu start user code
+I (1594) cpu_start: cpu freq: 360000000 Hz
+I (1596) app_init: Application information:
+I (1600) app_init: Project name:     ZXING_V4_0
+I (1604) app_init: App version:      1
+I (1608) app_init: Compile time:     May 13 2026 13:35:45
+I (1613) app_init: ELF file SHA256:  564b135e4...
+I (1617) app_init: ESP-IDF:          v6.0.1
+I (1621) efuse_init: Min chip rev:     v0.1
+I (1625) efuse_init: Max chip rev:     v1.99 
+I (1629) efuse_init: Chip rev:         v0.1
+I (1633) heap_init: Initializing. RAM available for dynamic allocation:
+I (1640) heap_init: At 4FF290F0 len 00011ED0 (71 KiB): RETENT_RAM
+I (1645) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM
+I (1651) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM
+I (1656) heap_init: At 501080A4 len 00007F5C (31 KiB): RTCRAM
+I (1661) heap_init: At 30100068 len 00001F98 (7 KiB): SPM
+I (1667) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator
+I (1674) spi_flash: detected chip: gd
+I (1677) spi_flash: flash io: dio
+I (1681) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (1686) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (1693) main_task: Started on CPU0
+I (1723) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations
+I (1723) main_task: Calling app_main()
+E (1723) CRITICAL: #############################################
+E (1733) CRITICAL: !!! FIRMWARE VERSION 45.0: STABLE 50 FIXED !!!
+E (1733) CRITICAL: #############################################
+I (1743) LVGL: Starting LVGL task
+W (1743) ledc: GPIO 26 is not usable, maybe conflict with others
+I (1753) ESP32_P4_EV: MIPI DSI PHY Powered on
+I (1753) ESP32_P4_EV: Install MIPI DSI LCD control panel
+I (1763) ESP32_P4_EV: Install EK79007 LCD control panel
+I (1763) ek79007: version: 2.0.2
+I (1933) ESP32_P4_EV: Display initialized
+I (1933) ESP32_P4_EV: Display resolution 1024x600
+I (1933) GT911: I2C address initialization procedure skipped - using default GT9xx setup
+I (1933) GT911: TouchPad_ID:0x39,0x31,0x31
+I (1933) GT911: TouchPad_Config_Version:89
+I (1943) ESP32_P4_EV: Setting LCD backlight: 100%
+I (1943) ESP32_P4_EV: Setting LCD backlight: 100%
+I (1953) ov9281: Detected Camera sensor PID=0x9281
+I (1983) app_video: version: 2.0.1
+I (1993) app_video: driver:  MIPI-CSI
+I (1993) app_video: card:    MIPI-CSI
+I (1993) app_video: bus:     esp32p4:MIPI-CSI
+I (1993) app_video: width=640 height=400
+W (1993) app_video: !!! HARDWARE STATE: BA81, 640x400 !!!
+I (2013) app_video: Video Stream Start
+W (2013) main: ZXING SCANNER VERSION 2.0 STARTED
+I (2013) main_task: Returned from app_main()
+I (2023) zxing_component: Scanning active (320x200)...
+-126.00:-78.00:-92.94:78.10:76.24:2-3
