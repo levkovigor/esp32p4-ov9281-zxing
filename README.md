@@ -73,3 +73,9 @@ idf.py build flash monitor
 ## Troubleshooting
 - **Black Screen**: Check the MIPI-CSI ribbon cable connection.
 - **Task WDT Error**: If the system resets, ensure that performance optimization is enabled in `sdkconfig` (`CONFIG_COMPILER_OPTIMIZATION_PERF=y`).
+
+---
+
+## 🤝 Acknowledgements
+
+A huge thanks to [Denis Druzhko](https://github.com/denisdruzhko) who has contributed to this project! 
